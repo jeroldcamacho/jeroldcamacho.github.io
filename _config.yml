@@ -1,0 +1,53 @@
+title: "1"
+description: an infosec blog?
+author: mirai
+github: https://github.com/haseul
+about: infosec noob
+avatar_url: /static/img/avatar.jpg
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-twitter
+      link: "https://twitter.com/jeroldcamacho"
+    - icon: fa-github
+      link: "https://github.com/jeroldcamacho"
+
+share:
+  twitter_username: jeroldcamacho
+
+urls:
+    - text: Bug Bounty
+      url: /category/bugbounty
+    - text: CTF
+      url: /category/ctf
+    - text: Pentest
+      url: /category/pentest
+    - text: About Me
+      url: /about/
+      
+url: "https://haseul.github.io/"
+baseurl: ""
+paginate: 25
+per_page: 25
+paginate_path: "/page/:num/"
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jemoji
+  - jekyll-auto-image
+  - jekyll-feed
+  - jekyll-sitemap 
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all

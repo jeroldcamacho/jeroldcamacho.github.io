@@ -1,29 +1,45 @@
-<title>.</title>
-<style>
-    a {
-    color: #0060B6;
-    text-decoration: none;
-    }
+---
+layout: default
+---
 
-    a:hover {
-        color:#00A0C6;
-        text-decoration:none;
-        cursor:pointer;
-    }
-</style>
-<pre>
-menu: <a href="blog">/blog</a>
+<div id="home">
+  <h1>{{ site.title }}</h1>
+  <hr />
 
-hello i'm jerold camacho,
+  <ol class="posts">
+    {% for post in paginator.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+    {% endfor %}
+  </ol>
 
-- cs student
-- bug bounty
-- i play ctf and htb machines occasionally
+  <!-- Pagination links -->
+  {% if paginator.total_pages > 1 %}
+    <ul class="pagination pagination-sm">
+      {% if paginator.previous_page %}
+        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
+      {% else %}
+        <li class="disabled"><span aria-hidden="true">&laquo;</span></li>
+      {% endif %}
 
-my socials:
-twitter: <a href="https://twitter.com/jeroldcamacho" target="_blank">@jeroldcamacho</a>
-linkedin: <a href="https://www.linkedin.com/in/jeroldcamacho/" target="_blank">@jeroldcamacho</a>
-github: <a href="https://github.com/jeroldcamacho" target="_blank">@jeroldcamacho</a>
+      <li><a href="/">First</a></li>
 
-other: <a href="https://ctftime.org/user/49081" target="_blank">ctf</a>, <a href="https://app.hackthebox.com/profile/89243" target="_blank">htb</a>, <a href="https://hackerone.com/heizes" target="_blank">bugbounty 1</a>, <a href="https://bugcrowd.com/jeroldcamacho" target="_blank">bug bounty 2</a>
-</pre>
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <li class="active"><a>{{ page }}<span class="sr-only">(current)</span></a></li>
+        {% elsif page == 1 %}
+          <li><a href="/">{{ page }}</a></li>
+        {% else %}
+          <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+        {% endif %}
+      {% endfor %}
+
+      <li><a href="/page/{{ paginator.total_pages }}/">Last</a></li>
+
+      {% if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
+      {% else %}
+        <li class="disabled"><span>&raquo;</span></li>
+      {% endif %}
+    </ul>
+  {% endif %}
+</div><!-- end #home -->
