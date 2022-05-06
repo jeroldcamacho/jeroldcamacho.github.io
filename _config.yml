@@ -1,8 +1,8 @@
-title: "1"
-description: an infosec blog?
+title: "my trashbin"
+description: infosec blog
 author: mirai
 github: https://github.com/haseul
-about: infosec noob
+about: noob
 avatar_url: /static/img/avatar.jpg
 
 enableTags: true
@@ -23,12 +23,14 @@ share:
   twitter_username: jeroldcamacho
 
 urls:
-    - text: Bug Bounty
-      url: /category/bugbounty
     - text: CTF
       url: /category/ctf
     - text: Pentest
       url: /category/pentest
+    - text: Bug Bounty
+      url: /category/bugbounty
+    - text: Uncategorized
+      url: /category/uncategorized
     - text: About Me
       url: /about/
       

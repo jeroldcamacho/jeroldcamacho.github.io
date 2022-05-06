@@ -7,7 +7,7 @@ layout: compress
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/static/img/favicon.ico" />
+    <!-- <link rel="icon" href="/static/img/favicon.ico" /> -->
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.author }}{% endif %}</title>
     <meta name="author" content="{{ site.author }}" />
     <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
@@ -119,7 +119,7 @@ layout: compress
       <div class="col-sm-3">
         <div class="fixed-condition">
           <a href="/"><img class="profile-avatar" src="{{ site.avatar_url }}" height="75px" width="75px" /></a>
-          <h1 class="author-name">{{ site.author }}</h1>
+          <h1 class="author-name"><a href="/">{{ site.author }}</a></h1>
           {% if site.about %}
             <div class="profile-about">
               {{ site.about }}
@@ -133,13 +133,13 @@ layout: compress
             </ul>
           </div>
           <!-- HTB -->
-          {% comment %}
+          <!-- {% comment %}
           <div class="social">
             <ul>
               <a href="https://www.hackthebox.eu/profile/97826"><script src="https://www.hackthebox.eu/badge/97826"></script></a>
             </ul>
           </div>
-          {% endcomment %}
+          {% endcomment %} -->
           {% comment %}
           <div class="search" id="js-search">
             <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">

@@ -37,8 +37,8 @@ Nmap done: 1 IP address (1 host up) scanned in 85.22 seconds
 
 Since port 80 is open, lets do some passive recon on the website.
 
-![](/static/img/thm-library-writeup/user1.png)
-![](/static/img/thm-library-writeup/user2.png)
+<!-- ![](/static/img/thm-library-writeup/user1.png)
+![](/static/img/thm-library-writeup/user2.png) -->
 
 I listed down all the usernames I found in the website that is important for later use.
 1. meliodas
@@ -87,7 +87,7 @@ Login to the ssh and get the `user.txt` flag!
 
 # Privilege Escalation: meliodas --> root
 
-## python library hijacking 
+### python library hijacking 
 As you can see when running `sudo -l` we can run the file `/home/meliodas/bak.py` which was owned by `root`.
 
 ![](/static/img/thm-library-writeup/sudo.png)
@@ -120,17 +120,16 @@ Let's replicate what he did in the blog post.
 	pty.spawn('/bin/bash')
 	```
 - Run this command `sudo /usr/bin/python3 /home/meliodas/bak.py`
-- see if it works
-
 	![](/static/img/thm-library-writeup/os.png)
 
-It doesnt work with os library, lets repeat the same steps and try it with `zipfile` library.
+It doesnt work with the python `os` library, lets repeat the same steps with `zipfile` library.
 
 And we are now root!
 
 ![](/static/img/thm-library-writeup/root.png)
 
 ## Easiest way to gain root
+
 1. Delete the `bak.py` file
 2. Create a new one and put the contents below
 	```python
@@ -140,6 +139,6 @@ And we are now root!
 	
 3. and run it
 
-![](/static/img/thm-library-writeup/root2.png)
+	![](/static/img/thm-library-writeup/root2.png)
 
 Thank you!

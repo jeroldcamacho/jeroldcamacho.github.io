@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1</title>
-    <description>an infosec blog?</description>
+    <title>my trashbin</title>
+    <description>infosec blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 May 2022 21:54:00 +0800</pubDate>
-    <lastBuildDate>Sun, 01 May 2022 21:54:00 +0800</lastBuildDate>
+    <pubDate>Fri, 06 May 2022 15:19:53 +0800</pubDate>
+    <lastBuildDate>Fri, 06 May 2022 15:19:53 +0800</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Internship in Secuna</title>
+        <description>&lt;p&gt;I spent summer, starting February until May 2022 interning at Secuna, the biggest and most trusted cybersecurity testing platform in the Philippines. Ever since high school, Information Security is top most desired field I want to work into. So, I apply for internship and sent my CV through their email. And later that day I was invited for Interview.&lt;/p&gt;
+
+&lt;!-- ![](/static/img/internship-in-secuna/email.png) --&gt;
+
+&lt;h1 id=&quot;internship&quot;&gt;Internship&lt;/h1&gt;
+
+&lt;p&gt;As an intern with Secuna, I worked in a Penetration Testing position and was responsible for helping organization identify vulnerabilities. I experienced working with other employees and co-interns who have the same position as mine. It is quite overwheling&lt;/p&gt;
+
+&lt;p&gt;During my internship with the company, I was given a week to finish a Udemy course named &lt;strong&gt;Web Application Penetration Testing&lt;/strong&gt; which was authored by  AJ Dumanhug, a CEO of the company. I learned new techniques which I’m not familiar with in the past. I also learned creating a pentesting report where you need to list down all the vulnerabilities you have found and specify the severity level, the impact and remediation of the vulnerability to the organization. I managed to finish the course in two days and got the certificate.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/internship-in-secuna/cert.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I also did a pentest on a specific web application target, created a pentesting report, and report it in front of other employees. It was very challenging experience as I am lacking on communication skills but I have managed it.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;From my internship in Secuna, I was able to practice not only my technical skills, mental skills but also social skills as I worked with other employees and interns in the company. From the knowledges I got from the WAPT course I took, the experience from pentesting a web application to creating and presenting a pentest report is a huge help to build myself professionally as that skills and experiences will be useful in my future career in Information Security field.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 May 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/uncategorized/2022/05/04/internship-in-secuna.html</link>
+        <guid isPermaLink="true">http://localhost:4000/uncategorized/2022/05/04/internship-in-secuna.html</guid>
+        
+        
+        <category>uncategorized</category>
+        
+      </item>
     
       <item>
         <title>[THM] Library Writeup</title>
@@ -42,8 +70,8 @@ Nmap &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;: 1 IP address &lt;span cl
 
 &lt;p&gt;Since port 80 is open, lets do some passive recon on the website.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/img/thm-library-writeup/user1.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/static/img/thm-library-writeup/user2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;!-- ![](/static/img/thm-library-writeup/user1.png)
+![](/static/img/thm-library-writeup/user2.png) --&gt;
 
 &lt;p&gt;I listed down all the usernames I found in the website that is important for later use.&lt;/p&gt;
 &lt;ol&gt;
@@ -91,7 +119,7 @@ Nmap &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;: 1 IP address &lt;span cl
 
 &lt;h1 id=&quot;privilege-escalation-meliodas--root&quot;&gt;Privilege Escalation: meliodas –&amp;gt; root&lt;/h1&gt;
 
-&lt;h2 id=&quot;python-library-hijacking&quot;&gt;python library hijacking&lt;/h2&gt;
+&lt;h3 id=&quot;python-library-hijacking&quot;&gt;python library hijacking&lt;/h3&gt;
 &lt;p&gt;As you can see when running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo -l&lt;/code&gt; we can run the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home/meliodas/bak.py&lt;/code&gt; which was owned by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/static/img/thm-library-writeup/sudo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -123,21 +151,18 @@ Nmap &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;: 1 IP address &lt;span cl
   &lt;span class=&quot;n&quot;&gt;pty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spawn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/bin/bash'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;Run this command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo /usr/bin/python3 /home/meliodas/bak.py&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;see if it works&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/static/img/thm-library-writeup/os.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Run this command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo /usr/bin/python3 /home/meliodas/bak.py&lt;/code&gt;
+  &lt;img src=&quot;/static/img/thm-library-writeup/os.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It doesnt work with os library, lets repeat the same steps and try it with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zipfile&lt;/code&gt; library.&lt;/p&gt;
+&lt;p&gt;It doesnt work with the python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;os&lt;/code&gt; library, lets repeat the same steps with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zipfile&lt;/code&gt; library.&lt;/p&gt;
 
 &lt;p&gt;And we are now root!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/static/img/thm-library-writeup/root.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;easiest-way-to-gain-root&quot;&gt;Easiest way to gain root&lt;/h2&gt;
+
 &lt;ol&gt;
   &lt;li&gt;Delete the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bak.py&lt;/code&gt; file&lt;/li&gt;
   &lt;li&gt;Create a new one and put the contents below
@@ -145,10 +170,12 @@ Nmap &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;: 1 IP address &lt;span cl
  &lt;span class=&quot;n&quot;&gt;pty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spawn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/bin/bash'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;and run it&lt;/li&gt;
-&lt;/ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;and run it&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/img/thm-library-writeup/root2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/static/img/thm-library-writeup/root2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;Thank you!&lt;/p&gt;
 </description>

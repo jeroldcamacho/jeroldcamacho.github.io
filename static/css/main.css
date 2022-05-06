@@ -1,46 +1,48 @@
 body {
-    font-family: "Roboto Thin", Arial, sans-serif;
-    background: url("/static/img/dark_dotted2.png");
-    line-height: 1.5em;
-    font-weight: 350;
-    font-size: 15px;
-    color: #FFFFFF;
-  }
-  hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #F7F1F1;
-    border-bottom: 1px solid #fff;
-  }
-  span.time, span.categories {
-    color: #ADADAD;
-    margin-bottom: 5px;
-    font-size: 13px;
-  }
-  h1, h2, h3 {
-    color: #32CD32;
-    font-weight: normal;
-  }
-  h1 {
-    margin-bottom: 10px;
-    font-size: 30px;  /* Author & Title */
-  }
-  h2, h3 {
-    margin-bottom: 5px;
-  }
-  a, a:link, a:active {
-    text-decoration: none;
-    color: #FFD700;
-  }
-  a:hover {
-    color: #1E90FF;
-    text-decoration: underline;
-  }
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  /* font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+  background: url("/static/img/subtle_dots.png");
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 16px;
+  color: #666;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #F7F1F1;
+  border-bottom: 1px solid #fff;
+}
+span.time, span.categories {
+  color: #ADADAD;
+  margin-bottom: 5px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+h1, h2, h3 {
+  color: #696969;
+  font-weight: normal;
+}
+h1 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+h2, h3 {
+  margin-bottom: 5px;
+}
+a, a:link, a:active {
+  text-decoration: none;
+  color: #2a7ae2
+}
+a:hover {
+  color: #111;
+  text-decoration: underline;
+}
   
   /* Layout */
   .main-layout {
-      background: url("/static/img/dark_dotted2.png");
+      background: url("/static/img/subtle_dots.png");
   }
   .sidebar-nav {
     margin: 0;
@@ -65,9 +67,7 @@ body {
     font-size: 12px;
     border: none;
   }
-  div.content .highlight {
-      background: #333333;
-  }
+  
   footer {
     border-top: 1px solid #F7F1F1;
     width: 100%;
@@ -76,25 +76,28 @@ body {
     margin-bottom: 3em;
     padding-top: 10px;
     color: #C2C2C2;
-    font-size: 12px;
+    font-size: 11px;
     bottom: 0;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  div.post-content .btn-tags {
+    margin-bottom: 3px;
   }
   
   /* Left column */
   div.col-sm-3 {
     margin-top: 100px;
     font-size: 15px;	/* About & Sidebars */
-    color: #ffffff;
+    color: #666;
   }
   div.col-sm-3 strong {
     font-size: 15px;
-    color: #32CD32;
+    color: #4A4A4A;
     font-weight: normal;
   }
   div.col-sm-3 div.profile-about {
     margin-top: 10px;
-    color: #FFFFFF;
+    color: #8C8C8C;
   }
   div.col-sm-3 img.profile-avatar { 
     border-radius: 150px;
@@ -147,7 +150,7 @@ body {
     color: #969394;
   }
   .social li a:hover {
-    color: #ffffff;
+    color: #6D6D6D;
   }
   
   .share-page {
