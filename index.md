@@ -7,7 +7,7 @@ profile:
 published: true
 ---
 
-Passionate CS undergraduate student with 3 years of experience in Penetration Testing specifically in Web Application Security. I have been acknowledged on several websites such as Google, Microsoft, and Adobe for reporting web security vulnerabilities. I also play CTF competitions with my team [joyuriz](https://ctftime.org/team/163844) on my free time.
+Passionate Computer Science graduate with 3 years of experience in Penetration Testing specifically in Web Application Security. I have been acknowledged on several websites such as Google, Microsoft, and Adobe for reporting web security vulnerabilities. I also play CTF competitions with my team [joyuriz](https://ctftime.org/team/163844) on my free time.
 
 ### Socials
 
