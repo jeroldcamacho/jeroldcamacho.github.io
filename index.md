@@ -11,5 +11,5 @@ Passionate Computer Science graduate with 3 years of experience in Penetration T
 
 ### Socials
 
-- [Twitter](https://twitter.com/jeroldcamacho), [LinkedIn](https://www.linkedin.com/in/jeroldcamacho/), [GitHub](https://github.com/haseul)
+- [Twitter](https://twitter.com/jeroldcamacho), [LinkedIn](https://www.linkedin.com/in/jeroldcamacho/), [GitHub](https://github.com/jeroldcamacho)
 - [HackerOne](https://hackerone.com/heizes?type=user), [Bugcrowd](https://bugcrowd.com/jeroldcamacho), [HackTheBox](https://app.hackthebox.com/profile/89243), [CTFTime](https://ctftime.org/user/49081)
