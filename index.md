@@ -12,4 +12,4 @@ Computer Science graduate with a strong interest in the following— penetration
 ### Socials
 
 - [Twitter](https://twitter.com/jeroldcamacho), [LinkedIn](https://www.linkedin.com/in/jeroldcamacho/), [GitHub](https://github.com/jeroldcamacho)
-- [HackerOne](https://hackerone.com/jcamacho), [Bugcrowd](https://bugcrowd.com/jeroldcamacho), [HackTheBox](https://app.hackthebox.com/profile/89243), [TryHackMe](https://tryhackme.com/p/jeroldcamachoss), [CTFTime](https://ctftime.org/user/49081)
+- [HackerOne](https://hackerone.com/jcamacho), [Bugcrowd](https://bugcrowd.com/jeroldcamacho), [HackTheBox](https://app.hackthebox.com/profile/89243), [TryHackMe](https://tryhackme.com/p/jeroldcamacho), [CTFTime](https://ctftime.org/user/49081)
